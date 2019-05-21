@@ -5,6 +5,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
@@ -51,7 +52,14 @@
                         <Insets left="5.0" right="10.0" />
                      </HBox.margin>
                   </Button>
-                  <ImageView pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="80.0" fitWidth="80.0">
+                     <image>
+                        <Image url="@../../../../../../../../Pictures/Saved%20Pictures/Alien-512.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </ImageView>
                </children>
             </HBox>
             <TextArea fx:id="txtResult" promptText="Welcome to the Alien Dictionary 2019...">

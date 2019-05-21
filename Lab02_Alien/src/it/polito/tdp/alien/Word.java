@@ -11,14 +11,6 @@ public class Word {
 		this.translation = translation;
 	}
 
-	/*@Override
-	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		result = prime * result + ((alienWord == null) ? 0 : alienWord.hashCode());
-		return result;
-	}*/
-
 		public String getAlienWord() {
 		return alienWord;
 	}
@@ -36,6 +28,15 @@ public class Word {
 		this.translation = translation;
 	}
 
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((alienWord == null) ? 0 : alienWord.hashCode());
+		return result;
+	}
+
+	
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
